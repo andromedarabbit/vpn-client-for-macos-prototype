@@ -14,6 +14,11 @@
 		801739EA21C2F148009966EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 801739E921C2F148009966EB /* main.m */; };
 		801739F521C2F148009966EB /* VPN_Client_for_macOS_PrototypeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 801739F421C2F148009966EB /* VPN_Client_for_macOS_PrototypeTests.m */; };
 		80173A0021C2F148009966EB /* VPN_Client_for_macOS_PrototypeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 801739FF21C2F148009966EB /* VPN_Client_for_macOS_PrototypeUITests.m */; };
+		80173A1221C2F171009966EB /* us.conf in Resources */ = {isa = PBXBuildFile; fileRef = 80173A0D21C2F170009966EB /* us.conf */; };
+		80173A1321C2F171009966EB /* bash in Resources */ = {isa = PBXBuildFile; fileRef = 80173A0E21C2F170009966EB /* bash */; };
+		80173A1421C2F171009966EB /* wireguard-go in Resources */ = {isa = PBXBuildFile; fileRef = 80173A0F21C2F170009966EB /* wireguard-go */; };
+		80173A1521C2F171009966EB /* wg in Resources */ = {isa = PBXBuildFile; fileRef = 80173A1021C2F170009966EB /* wg */; };
+		80173A1621C2F171009966EB /* wg-quick in Resources */ = {isa = PBXBuildFile; fileRef = 80173A1121C2F171009966EB /* wg-quick */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,11 @@
 		801739FB21C2F148009966EB /* VPN_Client_for_macOS_PrototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VPN_Client_for_macOS_PrototypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		801739FF21C2F148009966EB /* VPN_Client_for_macOS_PrototypeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VPN_Client_for_macOS_PrototypeUITests.m; sourceTree = "<group>"; };
 		80173A0121C2F148009966EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80173A0D21C2F170009966EB /* us.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = us.conf; sourceTree = "<group>"; };
+		80173A0E21C2F170009966EB /* bash */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = bash; sourceTree = "<group>"; };
+		80173A0F21C2F170009966EB /* wireguard-go */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "wireguard-go"; sourceTree = "<group>"; };
+		80173A1021C2F170009966EB /* wg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = wg; sourceTree = "<group>"; };
+		80173A1121C2F171009966EB /* wg-quick */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "wg-quick"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,11 @@
 		801739D121C2F147009966EB = {
 			isa = PBXGroup;
 			children = (
+				80173A0E21C2F170009966EB /* bash */,
+				80173A0D21C2F170009966EB /* us.conf */,
+				80173A1021C2F170009966EB /* wg */,
+				80173A1121C2F171009966EB /* wg-quick */,
+				80173A0F21C2F170009966EB /* wireguard-go */,
 				801739DC21C2F147009966EB /* VPN_Client_for_macOS_Prototype */,
 				801739F321C2F148009966EB /* VPN_Client_for_macOS_PrototypeTests */,
 				801739FE21C2F148009966EB /* VPN_Client_for_macOS_PrototypeUITests */,
@@ -234,7 +249,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80173A1221C2F171009966EB /* us.conf in Resources */,
 				801739E421C2F148009966EB /* Assets.xcassets in Resources */,
+				80173A1621C2F171009966EB /* wg-quick in Resources */,
+				80173A1521C2F171009966EB /* wg in Resources */,
+				80173A1321C2F171009966EB /* bash in Resources */,
+				80173A1421C2F171009966EB /* wireguard-go in Resources */,
 				801739E721C2F148009966EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

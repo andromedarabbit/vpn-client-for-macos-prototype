@@ -10,6 +10,21 @@
 
 @interface ViewController : NSViewController
 
+typedef NS_ENUM(NSUInteger, WireguardCommand) {
+    WireguardCommandUp,
+    WireguardCommandDown
+};
+
+- (BOOL)checkStatus;
+- (void)refreshStatus;
+- (void)updateStatus:(BOOL)isTunneled;
+- (void)manipulateTunnel:(WireguardCommand)command;
+
+@property (retain) NSFileManager *fileManager;
+
+@property (weak) IBOutlet NSSecureTextField *adminPasswordTextField;
+@property (weak) IBOutlet NSTextField *currentStatusTextField;
+@property (weak) IBOutlet NSButton *tunnelingSwitcherButton;
 
 @end
 
